@@ -1,0 +1,67 @@
+img {
+  max-width: 400px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.project {
+  background: #fff;
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  width: 400px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project > .img-container {
+  overflow: hidden;
+}
+
+.project > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+  color: #663A74;
+}
+
+.project > .content > ul {
+  list-style-type: none;
+  color: #663A74;
+}
+
+.project > .content > ul > li {
+  text-align: left;
+  margin-top: 18px;
+  color: #663A74;
+}
+
+.card--link {
+  box-shadow: 1px 4px 4px #555;
+}
+
+#img1 {
+  flex: calc(1145/822)
+}
+
+#img2 {
+  flex: calc(1459/747)
+}
+
+#img3 {
+  flex: calc(1296/840)
+}
+
+#img4 {
+  flex: calc(1642/906)
+}
+
+#img5 {
+  flex: calc(665/416)
+}
+
+#img6 {
+  flex: calc(888/557)
+}

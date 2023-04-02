@@ -1,0 +1,12 @@
+.card--wrapper {
+
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: center;
+  overflow: auto;
+  color: #663A74;
+}

@@ -7,7 +7,7 @@ function Header() {
     <ul className="nav">
       <li className="nav-item">
         <NavLink
-          to="/"
+          to="/home"
           end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
@@ -47,7 +47,6 @@ function Header() {
           Contact
         </NavLink>
       </li>
-
     </ul>
   );
 }

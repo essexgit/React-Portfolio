@@ -1,29 +1,32 @@
 import React from "react";
-import "./style.css";
 import { Link } from "react-router-dom";
+import Project from "./projects.json";
 
-function ProjectCard(props) {
-    return (
-        <div className="project">
-            <div className="img-container" id={"img" + props.id} >
-                <img alt={props.Title} src={process.env.PUBLIC_URL + props.image} />
-            </div>
-            <div className="content">
-                <ul>
-                    <li>
-                        <strong>Title:</strong> {props.Title}
-                    </li>
-                    <li>
-                        <strong><Link className="card--link" to={props.Github}>Github Repository</Link> </strong>
-                    </li>
-                    <li>
-                        <strong><Link className="card--link" to={props.Deployment}>Webpage</Link></strong>
-                    </li>
-                </ul>
-            </div>
+const ProjectCard = () => {
+    const ProjectList = () =>
+        Project.map((card, index) => {
+            return (
+                <div className="project">
+                    <div className="img-container" id={"img" + card.id} >
+                        <img alt={card.Title} src={process.env.PUBLIC_URL + card.image} />
+                    </div>
+                    <div className="content">
+                        <ul>
+                            <li>
+                                <strong>Title:</strong> {card.Title}
+                            </li>
+                            <li>
+                                <strong><Link className="card--link" to={card.Github}>Github Repository</Link> </strong>
+                            </li>
+                            <li>
+                                <strong><Link className="card--link" to={card.Deployment}>Webpage</Link></strong>
+                            </li>
+                        </ul>
+                    </div>
 
-        </div>
-    );
-}
+                </div>
+            );
+        });
+};
 
 export default ProjectCard;

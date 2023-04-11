@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import "./index.css";
 
 function Header() {
   return (
     <ul className="nav">
       <li className="nav-item">
         <NavLink
-          to="/"
+          to="/home"
           end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
@@ -47,7 +46,6 @@ function Header() {
           Contact
         </NavLink>
       </li>
-
     </ul>
   );
 }

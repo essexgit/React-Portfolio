@@ -15,11 +15,11 @@ body,
 
 a:-webkit-any-link {
   text-decoration: none !important;
-  color: #663A74;
+  color: var(--primaryColor);
 }
 
 body {
-  color: #663A74;
+  color: var(--primaryColor);
   background: #ECEFF1;
 }
 
@@ -53,7 +53,6 @@ main {
   z-index: 5;
   position: absolute;
   align-self: center;
-  /* justify-self: center; */
 }
 
 .sloganWrapper {
@@ -61,23 +60,17 @@ main {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  /* align-content: end; */
   align-items: stretch;
   align-self: end;
-  /* justify-content: right; */
   width: clamp(50vw, 500px, 90vw);
   overflow-wrap: normal;
   position: absolute;
 }
 
-.sloganA {
-  font-size: 5vh;
-  margin: 0 4rem 0 0;
-  text-align: right;
-}
-
+.sloganA,
 .sloganB {
   font-size: 5vh;
   margin: 0 4rem 0 0;
   text-align: right;
+  color: var(--primaryColor);
 }

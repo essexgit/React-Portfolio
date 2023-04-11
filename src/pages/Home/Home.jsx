@@ -1,7 +1,6 @@
 import React from "react";
-import "./pages.css";
-import SvgTitle from "../assets/Images/SVGTitle";
-import SvgPortrait from "../assets/Images/SVGPortrait";
+import SvgTitle from "../../assets/images/SVGTitle.jsx";
+import SvgPortrait from "../../assets/images/SVGPortrait.jsx";
 
 function Home(props) {
   return (
@@ -12,7 +11,7 @@ function Home(props) {
       <div className="pagePortrait">
         <SvgPortrait />
       </div>
-      <div class="sloganWrapper">
+      <div className="sloganWrapper">
         <h1 className="sloganA">Make the Rules</h1>
         <h1 className="sloganB">Shout the Loudest</h1>
       </div>

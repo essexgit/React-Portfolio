@@ -1,29 +1,31 @@
-import React from "react";
-import "./style.css";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-function ProjectCard(props) {
+const ProjectCard = (props) => {
     return (
-        <div className="project">
-            <div className="img-container" id={"img" + props.id} >
-                <img alt={props.Title} src={process.env.PUBLIC_URL + props.image} />
+        <Fragment key={props.id}>
+            <div className="project">
+                <Link to={props.Deployment}>
+                    <div className="img-container"  >
+                        <img src={`${props.image}`} width={450} height={250} alt={props.Title} />
+                    </div>
+                </Link>
+                <div className="content">
+                    <ul>
+                        <li>
+                            <strong>Title:</strong> {props.Title}
+                        </li>
+                        <li>
+                            <strong><Link className="card--link" to={props.Github}>Github Repository Link</Link>  </strong>
+                        </li>
+                        <li>
+                            <strong><Link className="card--link" to={props.Deployment}>Webpage Link</Link></strong>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div className="content">
-                <ul>
-                    <li>
-                        <strong>Title:</strong> {props.Title}
-                    </li>
-                    <li>
-                        <strong><Link className="card--link" to={props.Github}>Github Repository</Link> </strong>
-                    </li>
-                    <li>
-                        <strong><Link className="card--link" to={props.Deployment}>Webpage</Link></strong>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
+        </Fragment>
     );
-}
+};
 
 export default ProjectCard;

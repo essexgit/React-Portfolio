@@ -1,0 +1,7 @@
+$primaryColor: #663A74;
+$secondaryColor: #ABA4DB;
+
+:root {
+  --primaryColor: #{$primaryColor};
+  --secondaryColor:#{$secondaryColor};
+}

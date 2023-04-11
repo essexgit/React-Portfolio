@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Exo 2", sans-serif;
+  src: url("../../../assets/fonts") format("ttf");
+}
+html {
+  font-family: "Exo 2";
+}
+
+:root {
+  --primaryColor: #663A74;
+  --secondaryColor:#ABA4DB;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.card--wrapper {
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 2vw;
+  justify-content: center;
+  color: var(--primaryColor);
+  gap: 1rem;
+}
+
+.nav {
+  margin: 0;
+  padding-inline-start: 0;
+  padding: 1rem 2rem 1rem 2rem;
+  list-style: none;
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: var(--primaryColor);
+}
+
+.nav-item {
+  z-index: 10;
+  text-decoration: none;
+  background-color: #ABA4DB;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: var(--primaryColor);
+}
+
+.nav-item:visited {
+  text-decoration: none;
+  background-color: #ABA4EF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px var(--primaryColor);
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  background-color: #ABA4EF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--primaryColor);
+}
+
+.nav-item:active {
+  text-decoration: none;
+  background-color: #ABA4EF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--primaryColor);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+}
+
+.project {
+  background: #fff;
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  width: clamp(300px, 400px, 30vw);
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project > .img-container {
+  overflow: hidden;
+}
+
+.project > .content {
+  flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+  color: #663A74;
+}
+
+.project > .content > ul {
+  list-style-type: none;
+  color: #663A74;
+}
+
+.project > .content > ul > li {
+  text-align: left;
+  margin-top: 18px;
+  color: #663A74;
+}
+
+.card--link {
+  box-shadow: 1px 4px 4px #555;
+}
+
+#img1 {
+  flex: 1.3929440389;
+}
+
+#img2 {
+  flex: 1.953145917;
+}
+
+#img3 {
+  flex: 1.5428571429;
+}
+
+#img4 {
+  flex: 1.8123620309;
+}
+
+#img5 {
+  flex: 1.5985576923;
+}
+
+#img6 {
+  flex: 1.5942549372;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+  color: var(--primaryColor);
+}
+
+body {
+  color: var(--primaryColor);
+  background: #ECEFF1;
+}
+
+main {
+  padding-inline: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pageTitle {
+  grid-area: 1/1/3/3;
+  width: clamp(40vw, 500px, 70vw);
+  z-index: 10;
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.pagePortrait {
+  grid-area: 2/2/3/4;
+  width: clamp(35vw, 400px, 50vw);
+  z-index: 5;
+  position: absolute;
+  align-self: center;
+}
+
+.sloganWrapper {
+  grid-area: 3/2/4/4;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: end;
+  width: clamp(50vw, 500px, 90vw);
+  overflow-wrap: normal;
+  position: absolute;
+}
+
+.sloganA,
+.sloganB {
+  font-size: 5vh;
+  margin: 0 4rem 0 0;
+  text-align: right;
+  color: var(--primaryColor);
+}
+
+/*# sourceMappingURL=style.css.map */

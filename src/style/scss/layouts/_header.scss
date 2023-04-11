@@ -1,5 +1,5 @@
 .nav {
-  background-color: #ECEFF1;
+  // background-color: #ECEFF1;
   margin: 0;
   padding-inline-start: 0;
   padding: 1rem 2rem 1rem 2rem;
@@ -9,37 +9,38 @@
   font-weight: bold;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: #663A74;
+  color: var(--primaryColor);
 }
 
 .nav-item {
+  z-index: 10;
   text-decoration: none;
   background-color: #ABA4DB;
   border-radius: 10px;
   padding: 0.5rem;
   margin: 0.5rem;
-  color: #663A74;
+  color: var(--primaryColor);
 }
 
 .nav-item:visited {
   text-decoration: none;
   background-color: #ABA4EF;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px #663A74;
+  box-shadow: 1px 1px 1px var(--primaryColor);
 }
 
 .nav-item:hover {
   text-decoration: none;
   background-color: #ABA4EF;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px #663A74;
+  box-shadow: 2px 2px 2px var(--primaryColor);
 }
 
 .nav-item:active {
   text-decoration: none;
   background-color: #ABA4EF;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px #663A74;
+  box-shadow: 2px 2px 2px var(--primaryColor);
 }
 
 a:link {

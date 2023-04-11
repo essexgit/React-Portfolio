@@ -1,21 +1,26 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import CardWrapper from "../../components/CardWrapper/CardWrapper";
-import Title from "../../components/Title";
+import CardWrapper from "../../components/CardWrapper";
+// import Title from "../../components/Title";
+import Project from "./projects.json";
 
+
+const ProjectList = () => {
+  return (
+    Project.map((card) => (
+      <ProjectCard {...card} key={card.id} />
+    )));
+};
 
 const Portfolio = () => {
 
-
   return (
-    <div>
+    <>
       <CardWrapper>
-        <Title />
-        <ProjectCard />
-
-
+        {/* <Title /> */}
+        <ProjectList />
       </CardWrapper>
-    </div>
+    </>
   );
 };
 

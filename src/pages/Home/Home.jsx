@@ -1,7 +1,6 @@
 import React from "react";
-import "../pages.css";
-import SvgTitle from "../../assets/Images/SVGTitle";
-import SvgPortrait from "../../assets/Images/SVGPortrait";
+import SvgTitle from "../../assets/images/SVGTitle.jsx";
+import SvgPortrait from "../../assets/images/SVGPortrait.jsx";
 
 function Home(props) {
   return (

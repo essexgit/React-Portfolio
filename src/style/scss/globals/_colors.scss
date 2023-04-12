@@ -1,7 +1,11 @@
 $primaryColor: #663A74;
 $secondaryColor: #ABA4DB;
+$lightContrast: #ECEFF1;
+$white: white;
 
 :root {
   --primaryColor: #{$primaryColor};
   --secondaryColor:#{$secondaryColor};
+  --lightContrast:#{$lightContrast};
+  --white:#{$white};
 }

@@ -1,13 +1,15 @@
 import React from 'react';
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import Layout from './components/Layout';
+// import { motion } from "framer-motion";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path='home' element={<Home />} />

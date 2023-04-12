@@ -3,8 +3,8 @@ import { Form } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <main >
+      <h1 className='contactTitle'>Contact Page</h1>
       <Form method="post" action="/events">
         <label >
           <span>Your Name</span>
@@ -18,9 +18,9 @@ export default function Contact() {
           <span>Your phone number</span>
           <input type="tel" name="telephone" />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" className='contactButton nav-item'>Send</button>
       </Form>
-    </div>
+    </main>
   );
 }
 

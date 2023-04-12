@@ -1,13 +1,11 @@
 .card--wrapper {
-
-  background: #ECEFF1;
-  height: 100%;
+  background: var(--lightContrast);
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  padding: 2vw;
+  padding-inline: 5dvw;
   justify-content: center;
-  // overflow: hidden;
   color: var(--primaryColor);
   gap: 1rem;
 }

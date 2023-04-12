@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
                 <div className="content">
                     <ul>
                         <li>
-                            <strong>Title:</strong> {props.Title}
+                            <h3><strong><u>{props.Title}</u></strong></h3>
                         </li>
                         <li>
                             <strong><Link className="card--link" to={props.Github}>Github Repository Link</Link>  </strong>

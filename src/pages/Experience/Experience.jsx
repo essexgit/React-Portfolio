@@ -3,7 +3,7 @@ import React from "react";
 function Experience() {
 
   return (
-    <main>
+    <main >
       <section className="segment proven">
         <div className="career">
           <div className="titleWrapper">

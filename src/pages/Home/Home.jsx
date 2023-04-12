@@ -1,12 +1,12 @@
 import React from "react";
-import SvgTitle from "../../assets/images/SVGTitle.jsx";
+import SvgName from "../../assets/images/SVGName.jsx";
 import SvgPortrait from "../../assets/images/SVGPortrait.jsx";
 
 function Home(props) {
   return (
     <div className="container">
       <div className="pageTitle">
-        <SvgTitle />
+        <SvgName />
       </div>
       <div className="pagePortrait">
         <SvgPortrait />

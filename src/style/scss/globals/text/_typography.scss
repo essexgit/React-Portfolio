@@ -1,0 +1,5 @@
+$fontH3Var: clamp(2rem, 8vw, 3rem);
+
+:root {
+  --fontH3Var: #{$fontH3Var};
+}

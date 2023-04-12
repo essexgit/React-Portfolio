@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  width: 100vw;
+  height: calc(100dvh - calc(20rem - 2dvh));
+  position: relative;
+}
+
+.pageTitle {
+  grid-area: 1 / 1 / 3 / 3;
+  width: clamp(40vw, 500px, 70vw);
+  z-index: 8;
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.pagePortrait {
+  grid-area: 2 / 2 / 3 / 4;
+  width: clamp(40vw, 500px, 70vw);
+  z-index: -1;
+  position: absolute;
+  align-self: center;
+}
+
+.sloganWrapper {
+  grid-area: 3 / 2 / 4 / 4;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: end;
+  width: clamp(50vw, 500px, 90vw);
+  overflow-wrap: normal;
+  position: absolute;
+}
+
+.sloganA,
+.sloganB {
+  font-size: 5vh;
+  margin: 0 4rem 0 0;
+  font-size: var(--fontH3Var);
+  text-align: right;
+  color: var(--primaryColor);
+}

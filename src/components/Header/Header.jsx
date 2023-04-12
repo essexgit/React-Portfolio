@@ -4,48 +4,48 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <ul className="nav">
-      <li className="nav-item">
-        <NavLink
-          to="/home"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
+      <NavLink
+        to="/home"
+        end
+        className={({ isActive }) =>
+          isActive ? 'nav-link active' : 'nav-link'
+        }
+      >
+        <li className="nav-item">
           Home
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="/portfolio"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
+        </li>
+      </NavLink>
+      <NavLink
+        to="/portfolio"
+        className={({ isActive }) =>
+          isActive ? 'nav-link active' : 'nav-link'
+        }
+      >
+        <li className="nav-item">
           Portfolio
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="/experience"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
+        </li>
+      </NavLink>
+      <NavLink
+        to="/experience"
+        className={({ isActive }) =>
+          isActive ? 'nav-link active' : 'nav-link'
+        }
+      >
+        <li className="nav-item">
           Experience
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="/contact"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
+        </li>
+      </NavLink>
+      <NavLink
+        to="/contact"
+        end
+        className={({ isActive }) =>
+          isActive ? 'nav-link active' : 'nav-link'
+        }
+      >
+        <li className="nav-item">
           Contact
-        </NavLink>
-      </li>
+        </li>
+      </NavLink>
     </ul>
   );
 }

@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <main >
       <h1 className='contactTitle'>Contact Page</h1>
-      <Form method="post" action="/events">
+      <Form method="post" action="/contact">
         <label >
           <span>Your Name</span>
           <input type="text" name="name" />
@@ -24,11 +24,17 @@ export default function Contact() {
   );
 }
 
-export const contactAction = async () => {
-  const data = await requestAnimationFrame.formData();
+export const contactAction = async ({ request }) => {
+  const data = await request.formData();
   const submission = {
     name: data.get("name"),
     email: data.get("email"),
-    tel: data.get("tel")
+    tel: data.get("telephone")
   };
+  console.log(submission);
+  // send post request
+
+
+
+  return redirect('/');
 };

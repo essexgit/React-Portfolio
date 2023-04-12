@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, useLocation } from 'react-router-dom';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Experience from './pages/Experience';
-import Contact from './pages/Contact';
-import Layout from './components/Layout';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Experience from './pages/Experience/Experience';
+import Contact, { contactAction } from './pages/Contact/Contact';
+import Layout from './components/Layout/Layout';
 // import { motion } from "framer-motion";
 
 const router = createBrowserRouter(
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
       <Route path='home' element={<Home />} />
       <Route path="portfolio" element={<Portfolio />} />
       <Route path="experience" element={<Experience />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="contact" element={<Contact />} action={contactAction} />
     </Route>
   ));
 function App() {

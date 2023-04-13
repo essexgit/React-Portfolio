@@ -13,7 +13,7 @@ function MagGlass() {
           width: "50dvw",
           height: "75px",
         }}
-        offsetLeft={100}
+        offsetLeft={50}
       />
     );
   }

@@ -1,9 +1,28 @@
 import React from "react";
+import { MagnifyingGlass } from "reactjs-magnifying-glass";
+import { isBrowser } from "react-device-detect";
+
+function MagGlass() {
+  if (isBrowser) {
+    return (
+      <MagnifyingGlass
+
+        glassStyle={{
+          border: "2px solid var(--primaryColor)",
+          borderRadius: "10% 10% 10% 10%",
+          width: "50dvw",
+          height: "75px",
+        }}
+        offsetLeft={100}
+      />
+    );
+  }
+}
 
 function Experience() {
-
   return (
     <main >
+      <MagGlass />
       <section className="segment proven">
         <div className="career">
           <div className="titleWrapper">
@@ -11,7 +30,7 @@ function Experience() {
           </div>
           <div className="dates activities current">
             <div className="date">
-              <h4>April 2018
+              <h4>April 2018 -
                 <strong>Present</strong>
               </h4>
             </div>

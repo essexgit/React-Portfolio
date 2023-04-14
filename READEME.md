@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 [![MIT License][license-shield]](https://github.com/essexgit/react-portfolio/blob/main/LICENSE.md)
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/ralph-cox-strategy66/)
 <!-- Readme template : https://github.com/othneildrew/Best-README-Template -->
@@ -14,14 +15,9 @@
   <p align="center">
     Creating a portfolio using React to help set me apart from other developers whose portfolios do not use the latest technologies.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View the Portfolio site »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    
   </p>
 </div>
 
@@ -45,8 +41,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -72,7 +66,7 @@ Managing not to get too distracted with animation features I put in the magnifie
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![React][React.js]](https://react.dev/)
+ [![React][React.js]](https://react.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +75,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Being a single page site, it can be cloned.
+Being a single page site, it can be cloned using the standard GitHub code copied below.
 
 ### Prerequisites
 
@@ -133,8 +127,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [The Bootcamp team](https://home.edx.org/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Google Fonts](https://fonts.google.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

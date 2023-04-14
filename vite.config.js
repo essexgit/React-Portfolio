@@ -10,7 +10,7 @@ export default defineConfig({
       usePolling: true
     }
   },
-  base: './',
+  base: '/react-portfolio/',
 
   plugins: [react()],
 });

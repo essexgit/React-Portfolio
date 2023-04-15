@@ -15,7 +15,7 @@
   <p align="center">
     Creating a portfolio using React to help set me apart from other developers whose portfolios do not use the latest technologies.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View the Portfolio site »</strong></a>
+    <a href="https://reliable-biscotti-f4cc78.netlify.app/"><strong>View the Portfolio site »</strong></a>
     <br />
     
   </p>
